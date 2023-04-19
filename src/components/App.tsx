@@ -39,8 +39,6 @@ export class App extends Component<{},IAppState> {
     }));
   };
   getLargeImage = (largeImageURL: string | undefined): void => {
-    console.log('largeImageUrl', largeImageURL);
-    
     this.setState((prevState) => (
       {showModal: !prevState.showModal,
       largeImage: {largeImageURL}}
